@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+</head>
+<body>
+<form method="POST">
+{% csrf_token %}
+{{ user.as_p }}
+{{ form.as_p }}
+<button type="submit">Sign Up</button>
+</form>
+<br>
+<a href="/login/">Click here to login</a>
+</body>
+</html>

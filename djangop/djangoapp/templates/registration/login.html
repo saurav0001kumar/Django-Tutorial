@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Login Page</title>
+    {% load widget_tweaks %}
+
+    <style>
+        .username
+        {
+            border:2px solid red;
+            background-color: green;
+        }
+        .password{
+            border:2px solid red;
+            background-color: green;
+        }
+        body{
+            background-color: rgb(0, 238, 255);
+
+        }
+    </style>
+
+
+</head>
+<body><center>    
+    <form method="POST" action="/check/">
+        {% csrf_token %}
+        <!-- {{ form.as_p }} -->
+        <h1>LOGIN HERE :</h1>
+<label>Username: </label>
+{{form.username |add_class:"username"}}
+        <br>
+        <br>
+        <label>Password: </label>
+{{form.password|add_class:"password"}}
+        <br>
+        <br>
+        <button type="submit">Login</button>
+        
+
+    </form>
+<br>
+<a href="/customreg/">New User? Click Here to Sign Up!</a>
+</center>
+
+</body>
+</html>

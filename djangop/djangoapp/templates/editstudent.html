@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Edit Details</title>
+</head>
+<body>
+    
+    <form method="post" action="/editstudent/{{student.id}}/">
+    {% csrf_token %}
+    <table border="1px" align="center" cellspacing="10px" cellpadding="0px">
+        <tr>
+            <th>
+            First Name</th>
+        <td><input type="text" name="fname" id="id_name" value="{{student.fname}}"></td>
+    </tr>
+    <tr>
+            <th>
+            Last Name</th>
+        <td><input type="text" name="lname" id="id_name" value="{{student.lname}}"></td>
+    </tr>
+    <tr>
+        <th>
+        Email</th>
+    <td><input type="email" name="email" id="id_email" value="{{student.email}}"></td>
+    </tr>
+    <tr>
+        <th>Date of birth</th>
+        <td><input type="date" name="dob" id="id_dob" value="{{student.dob}}"></td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td><input type="number" name="age" id="id_age" value="{{student.age}}"></td>
+    </tr>
+</table>
+<br>
+<center><button type="submit">Update</button></center>
+
+<br>
+<br>
+<a href="/createstudent">back to list</a>
+
+</body>
+</html>
