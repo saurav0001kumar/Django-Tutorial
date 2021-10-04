@@ -28,4 +28,4 @@ Some basic topics and features of Django web framework with examples.
 * ### Visit "127.0.0.1:8000" or "localhost:8000" on your browser to view the django app.  
 
 That's all. Enjoy!  
-Please don't forget to ⭐ the repository if you liked it.
+Please don't forget to ⭐ the repository if you like it.
